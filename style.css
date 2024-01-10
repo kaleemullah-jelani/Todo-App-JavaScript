@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #ecebeb;
+}
+
+.header {
+    height: 100px;
+    background: #FFF;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin-bottom: 40px;
+}
+
+.add-todo-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.user-name {
+    width: 30%;
+
+}
+
+.task {
+    width: 50%;
+}
+
+.btn {
+    display: flex;
+    width: 78px;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #4C30FF;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    transition: all .1s;
+}
+
+.btn:hover {
+    background: #3e20fe;
+}
+
+.btn:active {
+    scale: 0.9;
+}
+
+.filter-container {
+    width: 80%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-of-todos {
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.filter {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: #FFF;
+    width: 26%;
+
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ul li {
+    cursor: pointer;
+    padding: 10px 20px;
+    user-select: none;
+
+}
+
+.active {
+    background-color: #3e20fe;
+    border-radius: 100px;
+    color: white;
+}
+
+.todos-container {
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+.todo {
+    padding: 0 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    border-bottom: 1px solid #DDD;
+}
+
+.completed{
+    background-color: rgba(172, 255, 47, 0.226);
+}
+
+.todo-name-img {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    gap: 10%;
+}
+
+.img {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: linear-gradient(91deg, #0061FF -2.12%, #5FFEFF 98.93%);
+    user-select: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.todo:nth-child(even) .todo-name-img .img {
+    border-radius: 100px;
+    background: linear-gradient(271deg, #CCB5FF -2.09%, #4C30FF 98.96%);
+}
+
+.todo-title {
+    width: 50%;
+}
+
+.todo-action {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.delet img {
+    transition: all .1s;
+    cursor: pointer;
+    height: 70%;
+    width: 70%;
+}
+
+.delet img:hover {
+    scale: .9;
+}
+
+.delet img:active {
+    scale: .8;
+}
+
+.tick img {
+    transition: all .1s;
+    cursor: pointer;
+    height: 80%;
+    width: 80%;
+}
+
+.tick img:hover {
+    scale: .9;
+}
+
+.tick img:active {
+    scale: .8;
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.app-name {
+    background: linear-gradient(271deg, #80D8F8 0.33%, #6DBEEB 4.26%, #5097D9 11.14%, #3976C9 18.02%, #275DBE 25.89%, #1A4BB5 33.75%, #1241B0 41.61%, #103EAF 51.44%, #143FB1 59.3%, #2244BA 68.15%, #394CC8 77%, #5958DB 86.82%, #8266F4 97.64%, #8969F8 98.62%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-weight: 400;
+}
+.time{
+    background: linear-gradient(271deg, #80D8F8 0.33%, #6DBEEB 4.26%, #5097D9 11.14%, #3976C9 18.02%, #275DBE 25.89%, #1A4BB5 33.75%, #1241B0 41.61%, #103EAF 51.44%, #143FB1 59.3%, #2244BA 68.15%, #394CC8 77%, #5958DB 86.82%, #8266F4 97.64%, #8969F8 98.62%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 10%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+}
